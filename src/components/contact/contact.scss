@@ -1,0 +1,146 @@
+@import '../../styles/variables';
+
+@mixin tablet {
+    @media screen and (max-width: $page-width) { 
+        padding: 100px 20px;
+        .contact-container {
+            .contact-details {
+                .contact-info {
+                    width: 50%;
+                    margin-right: 10px;
+                }
+                .contact-form {
+                    width: 50%;
+                }
+            }   
+        }
+    }
+    @media screen and (max-width: $third-break-point) {
+        .contact-container {
+            .contact-details {
+                flex-direction: column;
+                .contact-info {
+                    width: 100%;
+                }
+                .contact-form {
+                    margin-top: 50px;
+                    width: 100%;
+                }
+            }   
+        }
+    }
+}
+
+.contact {
+    width: 100%;
+    background-color: $alternative-bg;
+    padding: 100px 0;
+    .contact-container {
+        max-width: $page-width;
+        margin: 0 auto;
+        .title {
+            border-left: 5px solid $secondary-color;
+            h2 {
+                padding: 0 0 0 10px;
+                margin: 0;
+                font-size: 2.4rem;
+                text-transform: uppercase;
+                }
+            p {
+                padding: 0 0 0 10px;
+                margin: 0;
+            }
+        }
+        .contact-details {
+            display: flex;
+            padding-top: 50px;
+            width: 100%;
+            .contact-info {
+                margin-right: 50px;
+                width: 35%;
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    li {
+                        display: flex;
+                        margin: 10px 0;
+                        div {
+                            width: 30%;
+                            &:last-child {
+                                width: 70%;
+                            }
+                            a {
+                                text-decoration: none;
+                                color: $main-font-color;
+                            }
+                        }
+                    }
+                }
+                .social {
+                    display: flex;
+                    // justify-content: flex-end;
+                    width: 100%;
+                    a {
+                        margin: 0 10px 0 0;
+                        svg{
+                            transition: .5s all;
+                            height: 32px;
+                            width: 32px;
+                            &:hover {
+                                cursor: pointer;
+                                fill: $secondary-color;
+                            }
+                        }
+                            
+                        
+                    }
+
+                }
+                
+            }
+            .contact-form {
+                width: 65%;
+                form {
+                    margin: 0 auto;
+                    label{
+                        padding: 15px 0;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                    @mixin form {
+                        width: 100%;
+                        border: 0px;
+                        margin: 10px 0;
+                        background-color: $transparent;
+                        border-bottom: 2px solid $secondary-color;
+                        &:hover {
+                            
+                        }
+                        &:focus {
+                            outline-width: 0;
+                        }
+                    }
+                    input {
+                        @include form;
+                        &:last-child {
+                            background-color: $secondary-color;
+                            padding: 25px 0;
+                            width: 200px;
+                            border-radius: 5px;
+                            float: right;
+                            cursor: pointer;
+                        }
+                    }
+                    textarea {
+                        @include form;
+                        resize: none;
+
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    @include tablet;
+}

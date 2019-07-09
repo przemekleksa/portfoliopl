@@ -1,0 +1,133 @@
+@import '../../styles/variables';
+
+
+@mixin cross {
+    &:nth-child(1) {
+        top: -50px;
+        left: 0px;  
+    }
+    &:nth-child(2) {
+        top: 8;
+        transform: rotate(45deg);
+        left: 0px;
+    }
+    &:nth-child(3) {
+        top: 12px;
+        left: 0px;
+        transform: rotate(-45deg);
+    }
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    // display:flex;
+    // transition: 2s all;
+    &.scrolled {
+        position: fixed;
+        top: 0;
+        background-color: $secondary-color;
+    }
+    &.transparent {
+        position: fixed;
+        
+        height: 40px;
+        background-color: $semi-transparent;
+    }
+    .burger {
+        display: block;
+        width: 40px;
+        height: 30px;
+        position: fixed;
+        top: 8px;
+        left: 6px;
+        cursor: pointer;
+        background-color: $transparent;
+        
+        // display: none;
+        // height: 40px;
+        // border: 1px solid red;
+    //  margin: 10px;
+        span {
+            transition: .5s all;
+            display: block;
+            top: 0px;
+            height: 5px;
+            // border:0px solid red ;
+            border-radius:4px;
+            width: 40px;
+            background-color: $secondary-color;
+            position: absolute;
+            &:nth-child(2){
+                top: 12px;
+            }
+            &:nth-child(3){
+                top:24px;
+            }
+        }
+        &.background {
+            span {
+                @include cross;
+            }
+        }
+    }
+    .no-show{
+        display:none;
+    }
+    .menu {
+        // position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        width: $page-width;
+        padding: 10px 0 12px 0;
+        margin: 0 auto;
+        list-style-type: none;
+        // transition: 2s all;
+        &.mobile {
+            display: block;
+            position: fixed;
+            top: 40px;
+            padding-left: 6px;
+            background-color: $semi-transparent;
+            
+            a {
+                li {
+                    margin: 10px 0;
+                }
+            }
+        }
+        &.scrolled {
+            a {
+                color: $main-font-color;
+                transition: 1.5s all;
+              
+                &:hover {
+                    color: $main-font-color;
+                }
+                li {
+                    border-top: 2px solid $secondary-color;
+                    &:hover {
+                        border-top: 2px solid $main-font-color;
+                    }
+                }
+            }
+        }
+        
+        a {
+        text-decoration: none;
+        color: $main-color;
+        transition: .5s all;
+        font-size: 1.2rem;
+            &:hover {
+                color: $secondary-color;
+            }
+            li {
+
+            }
+        }
+
+
+    }
+}

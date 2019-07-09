@@ -1,0 +1,108 @@
+@import '../../styles/variables';
+
+@mixin tablet {
+    @media screen and (max-width: $page-width) { 
+        .abilities-details {
+            padding: 100px 20px;
+            flex-direction: column;
+            .details {
+                width: 100%;
+            }
+            .stats {
+                // margin-top: 50px;
+                margin: 50px auto 0 auto;
+                width: 70%;
+            }
+        }
+    }
+}
+
+.abilities {
+    background-color: $alternative-bg;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+    .abilities-details {
+        max-width: $page-width;
+        display: flex;
+        margin: 0 auto;
+        padding: 100px 0;
+        .details {
+            width: 50%;
+            margin-right: 50px;
+            h3 {
+                margin: 0 0 30px 0;
+                font-size: 1.5rem;
+            }
+            p {
+                margin: 0;
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+        .stats {
+            width: 50%;
+            .technology {
+                .experiance {
+                    span {
+                        &:first-child {
+                            font-weight: 600;
+                        }
+                        &:last-child {
+                            float: right;
+                        }
+                    }
+                }
+                .experiance-bar{
+                    display: flex;
+                    .level {
+                        width: 80%;
+                        background-color: #000;
+                        height: 10px;
+                        margin: 10px 0;
+                    }
+                    #second-level{
+                        width: 60%;
+                    }
+                    #third-level{
+                        width: 70%;
+                    }
+                    #fourth-level {
+                        width: 50%;
+                    }
+                    #fifth-level {
+                        width: 30%;
+                    }
+                    #sixth-level {
+                        width: 30%;
+                        margin: 10px 0 0 0;
+                    }
+                    .fill {
+                        width: 20%;
+                        background-color: rgb(168, 168, 168);
+                        height: 10px;
+                        margin: 10px 0;
+                    }
+                    #second-fill {
+                        width: 40%;
+                    }
+                    #third-fill {
+                        width: 30%;
+                    }
+                    #fourth-fill {
+                        width: 50%;
+                    }
+                    #fifth-fill {
+                        width: 70%;
+                    }
+                    #sixth-fill {
+                        width: 70%;
+                        margin: 10px 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+    @include tablet;
+}

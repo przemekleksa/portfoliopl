@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+
+@mixin arrow {
+
+}
+
+.scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: $secondary-color;
+    transition: 2s all;
+    &.no-scroll {
+        position: fixed;
+        bottom: -50px;
+        right: -50px;
+        transform: rotate(-70deg);
+    }
+    svg {
+        margin: 4px 0 0 4px;
+        height: 32px;
+        width: 32px;
+        transition: 1s all;
+        &:hover {
+            fill: white;
+        }
+    }
+}
