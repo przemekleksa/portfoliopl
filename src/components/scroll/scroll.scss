@@ -12,6 +12,7 @@
     height: 40px;
     background-color: $secondary-color;
     transition: 2s all;
+    z-index: 1;
     &.no-scroll {
         position: fixed;
         bottom: -50px;
