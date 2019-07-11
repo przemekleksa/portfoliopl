@@ -4,7 +4,13 @@
 
 @mixin scale-photo {
     @media (max-width: $page-width) {
-        width: 40%;
+        width: 350px;
+    }
+    @media (max-width: $second-break-point) {
+        width: 300px;
+    }
+    @media (max-width: $fourth-break-point) {
+        width: 200px;
     }
 }
 
@@ -38,7 +44,10 @@
             .typewriter {
                 width: 100%;
                 padding: 40px 0 0 0;
-                margin: 0 auto;
+                position: absolute;
+                left: 50%;
+                margin-right: -50%;
+                transform: translateX(-50%);
                 text-transform: uppercase;
                 font-family: $typewriter-font;
                 text-shadow: 1px 1px #000;
