@@ -8,6 +8,7 @@ import Portfolio from '../../components/portfolio/portfolio';
 import ContactForm from '../../components/contact/contact';
 import Footer from '../../components/footer/footer';
 import ScrollButton from '../../components/scroll/scroll';
+import Navigation from '../../components/navigation/navigation';
 
 class Homepage extends Component {
     state = {
@@ -17,7 +18,8 @@ class Homepage extends Component {
     render() {
         return ( 
             <div className="container">
-                <Menu />
+                {/* <Menu /> */}
+                <Navigation />
                 <div className="welcome" id="home">
                     <div className="profile">
                         <div className="photo">
