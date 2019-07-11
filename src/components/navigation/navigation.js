@@ -40,7 +40,8 @@ class Navigation extends Component {
     render() { 
         return ( 
             <nav className={this.state.scrolled ? 'scrolled' : ''}>
-                <ul className={this.state.scrolled ? 'menu scrolled' : 'menu'}>
+                {/* <ul className={this.state.scrolled && !this.state.mobileMenuOpen ? 'menu scrolled' : this.state.scrolled && this.state.mobileMenuOpen ? 'menu ' : 'menu mobile-hidden'}> */}
+                <ul className={!this.state.mobileMenuOpen ? 'menu mobile-hidden' : 'menu'}>
                 <a href="#home" onClick={this.toggleMenu}>
                 <li>
                     Home
