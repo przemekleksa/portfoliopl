@@ -1,6 +1,13 @@
 
 @import '../../styles/variables';
 
+
+@mixin scale-photo {
+    @media (max-width: $page-width) {
+        width: 40%;
+    }
+}
+
 .container {
     width: 100%;
     position: inherit;
@@ -16,6 +23,7 @@
             .photo {
                 width: 370px;
                 margin: 0 auto;
+                @include scale-photo;
                 img {
                     max-width: 100%;
                     max-height: 100%;
