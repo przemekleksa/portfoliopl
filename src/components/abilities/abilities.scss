@@ -15,12 +15,21 @@
             }
         }
     }
+    @media screen and (max-width: $fourth-break-point) {
+        padding: 20px 10px;
+        .abilities-details {
+            padding: 25px 0;
+            .stats {
+                width: 100%;
+            }
+        }
+    }
 }
 
 .abilities {
     background-color: $alternative-bg;
     width: 100%;
-    z-index: -1;
+    
     position: relative;
     .abilities-details {
         max-width: $page-width;

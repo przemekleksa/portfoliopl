@@ -12,6 +12,28 @@
             }
         }
     }
+    @media screen and (max-width: $fourth-break-point) {
+        padding: 25px 10px;
+        .grid {
+            .project {
+                .screen {
+                    .details {
+                        padding: 5px;
+                            .title-tech {
+                               h3 {
+                                margin-bottom: 10px;
+                                } 
+                                
+                            }
+                            .buttons {
+                                padding-top: 10px;
+                            }
+
+                    }
+                }
+            }
+        }
+    }
 }
 
 .portfolio {

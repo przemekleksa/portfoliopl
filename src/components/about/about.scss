@@ -23,6 +23,7 @@
     }
     @media screen and (max-width: $second-break-point) {
         .personal-details {
+            padding: 50px 0 25px 0;
             flex-direction: column;
             .photo {
                 display:block;
@@ -85,7 +86,7 @@
         }
     }
     @media screen and (max-width: $fourth-break-point) {
-        padding: 10px 0;
+        padding: 20px 10px;
         .personal-details {
             .details {
                 .some-stats {
