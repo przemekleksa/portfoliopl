@@ -20,7 +20,7 @@ const Abilities = () => {
                 <div className="stats">
                     <div className="technology">
                         <div className="experiance">
-                            <span>HTML/CSS</span> - years of experiance <span>95%</span>
+                            <span>HTML/CSS</span> - years of experiance <span>90%</span>
                         </div>
                         <div className="experiance-bar">
                             <div className="level">

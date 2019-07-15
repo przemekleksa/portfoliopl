@@ -30,7 +30,7 @@ const Portfolio = () => {
                             </div>
                             <div className="buttons">
                             <a href="#home"><button>Live</button></a>
-                            <a href="#home"><button>Github</button></a>
+                            <a href="https://github.com/przemekleksa/Turism/tree/master/travelandadventure"><button>Github</button></a>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@ const Portfolio = () => {
                             </div>
                             <div className="buttons">
                             <a href="#home"><button>Live</button></a>
-                            <a href="#home"><button>Github</button></a>
+                            <a href="https://github.com/przemekleksa/React/tree/master/movie"><button>Github</button></a>
                             </div>
                         </div>
                     </div>
@@ -70,7 +70,7 @@ const Portfolio = () => {
                             </div>
                             <div className="buttons">
                             <a href="#home"><button>Live</button></a>
-                            <a href="#home"><button>Github</button></a>
+                            <a href="https://github.com/przemekleksa/The_Sass"><button>Github</button></a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@ const Portfolio = () => {
                         <img src={pizza} alt="movie agregator site screenshot" />
                         <div className="details">
                             <div className="title-tech">
-                                <h3>Movie aggregator</h3>
+                                <h3>Restaurant</h3>
                                 <ul>
                                     <li>
                                         JS
