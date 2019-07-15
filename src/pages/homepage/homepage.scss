@@ -28,7 +28,10 @@
             padding: 100px;
             .photo {
                 width: 370px;
-                margin: 0 auto;
+                position: absolute;
+                left: 50%;
+                margin-right: -50%;
+                transform: translateX(-50%);
                 @include scale-photo;
                 img {
                     max-width: 100%;
@@ -45,6 +48,14 @@
                 width: 100%;
                 padding: 40px 0 0 0;
                 position: absolute;
+                top: 500px;
+                @media (max-width: $second-break-point) {
+                    top: 400px;
+                }
+                @media (max-width: $fourth-break-point) {
+                    top: 300px;
+                }
+
                 left: 50%;
                 margin-right: -50%;
                 transform: translateX(-50%);

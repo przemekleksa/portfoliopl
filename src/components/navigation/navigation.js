@@ -41,8 +41,11 @@ class Navigation extends Component {
         return ( 
             <nav className={this.state.scrolled ? 'scrolled' : ''}>
                 {/* <ul className={this.state.scrolled && !this.state.mobileMenuOpen ? 'menu scrolled' : this.state.scrolled && this.state.mobileMenuOpen ? 'menu ' : 'menu mobile-hidden'}> */}
-                <ul className={!this.state.mobileMenuOpen ? 'menu mobile-hidden' : !this.state.scrolled ? 
-                'menu' : !this.state.mobileMenuOpen && this.state.scrolled ? 'menu' :'menu scrolled'}>
+                {/* <ul className={!this.state.mobileMenuOpen ? 'menu mobile-hidden' : !this.state.scrolled ? 
+                'menu' : !this.state.mobileMenuOpen && this.state.scrolled ? 'menu' :'menu scrolled'}> */}
+                <ul className={this.state.mobileMenuOpen ? 'menu' : (!this.state.mobileMenuOpen && this.state.scrolled ? 'menu scrolled mobile-hidden' :  'menu mobile-hidden')
+                                
+                }>
                 <a href="#home" onClick={this.toggleMenu}>
                 <li>
                     Home
