@@ -12,7 +12,11 @@
     @media (max-width: $fourth-break-point) {
         width: 200px;
     }
+    @media (max-height: 230px) {
+        width: 100px;
+    }
 }
+
 
 .container {
     width: 100%;
@@ -26,6 +30,9 @@
         height: 100vh;
         .profile {
             padding: 100px;
+            @media (max-height: 230px) {
+                padding: 20px;
+            }
             .photo {
                 width: 370px;
                 position: absolute;
@@ -49,13 +56,23 @@
                 padding: 40px 0 0 0;
                 position: absolute;
                 top: 500px;
+               
                 @media (max-width: $second-break-point) {
                     top: 400px;
                 }
                 @media (max-width: $fourth-break-point) {
                     top: 300px;
                 }
-
+                @media (max-height: 230px) {
+                    padding: 20px 0 0 0;
+                    top: 100px;
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                    h2 {
+                        font-size: 1.3rem;
+                    }
+                }
                 left: 50%;
                 margin-right: -50%;
                 transform: translateX(-50%);

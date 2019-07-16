@@ -46,27 +46,27 @@ class Navigation extends Component {
                 <ul className={this.state.mobileMenuOpen ? 'menu' : (!this.state.mobileMenuOpen && this.state.scrolled ? 'menu scrolled mobile-hidden' :  'menu mobile-hidden')
                                 
                 }>
-                <a href="#home" onClick={this.toggleMenu}>
+                <a href="#home" onClick={!this.state.mobileMenuOpen ? '' : this.toggleMenu}>
                 <li>
                     Home
                 </li>
                 </a>
-                <a href="#about" onClick={this.toggleMenu}>
+                <a href="#about" onClick={!this.state.mobileMenuOpen ? '' : this.toggleMenu}>
                 <li>
                     About
                 </li>
                 </a>
-                <a href="#stack" onClick={this.toggleMenu}>
+                <a href="#stack" onClick={!this.state.mobileMenuOpen ? '' : this.toggleMenu}>
                 <li>
                     Stack
                 </li>
                 </a>
-                <a href="#portfolio" onClick={this.toggleMenu}>
+                <a href="#portfolio" onClick={!this.state.mobileMenuOpen ? '' : this.toggleMenu}>
                 <li>
                     Portfolio
                 </li>
                 </a>
-                <a href="#contact" onClick={this.toggleMenu}>
+                <a href="#contact" onClick={!this.state.mobileMenuOpen ? '' : this.toggleMenu}>
                 <li>
                     Contact
                 </li>
