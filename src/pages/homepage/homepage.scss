@@ -12,7 +12,7 @@
     @media (max-width: $fourth-break-point) {
         width: 200px;
     }
-    @media (max-height: 230px) {
+    @media (max-height: $horizontal-break-point) {
         width: 100px;
     }
 }
