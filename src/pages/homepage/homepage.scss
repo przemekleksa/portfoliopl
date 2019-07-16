@@ -13,7 +13,7 @@
         width: 200px;
     }
     @media (max-height: $horizontal-break-point) {
-        width: 100px;
+        width: 170px;
     }
 }
 
@@ -65,7 +65,7 @@
                 }
                 @media (max-height: $horizontal-break-point) {
                     padding: 20px 0 0 0;
-                    top: 100px;
+                    top: 180px;
                     h1 {
                         font-size: 1.5rem;
                     }
