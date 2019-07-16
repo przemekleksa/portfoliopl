@@ -30,7 +30,7 @@
         height: 100vh;
         .profile {
             padding: 100px;
-            @media (max-height: 230px) {
+            @media (max-height: $horizontal-break-point) {
                 padding: 20px;
             }
             .photo {
@@ -63,7 +63,7 @@
                 @media (max-width: $fourth-break-point) {
                     top: 300px;
                 }
-                @media (max-height: 230px) {
+                @media (max-height: $horizontal-break-point) {
                     padding: 20px 0 0 0;
                     top: 100px;
                     h1 {
