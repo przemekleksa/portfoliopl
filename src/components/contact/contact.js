@@ -14,15 +14,16 @@ const ContactForm = () =>
             <h3>Get in Touch</h3>
 
                 <ul>
-                    <li>
+                    {/* <li>
                         <div className="field">
                         Address:
                         </div>
                         <div className="data">
-                        Na kozłówce 14
+                        Na kozłówce 14<br/>
+                        30-670 Kraków
                         </div>
-                         {/* <span>Address:</span> Na kozłówce 14 */}
-                    </li>
+                        
+                    </li> */}
                     <li>
                         <div className="field">
                         Email:
