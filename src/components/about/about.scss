@@ -2,7 +2,7 @@
 
 @mixin tablet {
     @media screen and (max-width: $page-width) { 
-        padding: 50px 20px; 
+        padding: 50px 20px 0 20px; 
             // width: 100%;
         .personal-details{
             // flex-direction: column;
@@ -23,7 +23,7 @@
     }
     @media screen and (max-width: $second-break-point) {
         .personal-details {
-            padding: 50px 0 25px 0;
+            padding: 50px 0 50px 0;
             flex-direction: column;
             .photo {
                 display:block;
@@ -42,6 +42,7 @@
                 .some-stats {
                     .download-button {
                        float: right; 
+                       width: 100%;
                     }
                 }
             }
@@ -88,6 +89,7 @@
     @media screen and (max-width: $fourth-break-point) {
         padding: 20px 10px;
         .personal-details {
+            padding: 50px 0 5px 0;
             .details {
                 .some-stats {
                     .row {
@@ -124,7 +126,7 @@
 .about {
     max-width: $page-width;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     .title {
         border-left: 5px solid $secondary-color;
         h2 {

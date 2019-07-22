@@ -1,6 +1,7 @@
 import React from 'react';
 import './about.scss';
-import przemekleksa from './przemekleksa.jpeg';
+import przemekleksa from './przemekleksacv.jpg';
+import cv from './Przemyslaw_Leksa_CV.pdf';
 
 const About = () => {
     return ( 
@@ -14,7 +15,7 @@ const About = () => {
                     <img src={przemekleksa} alt="Przemek Leksa" />
                 </div>
                 <div className="details">
-                    <h3>I'm Przemysław Leksa and <span>Frontend Developer</span></h3>
+                    <h3>I'm Przemysław Leksa and I'm a <br/><span>Frontend Developer</span></h3>
                     <p>Hi! My name is <span>Przemysław Leksa</span>. I'm a freelance Frontend Developer, and I'm very passionate and dedicated to my work. I'm currently looking for possibilities to start a full time Frontend Developer job.</p>
                     <div className="some-stats">
                         <div className="row">
@@ -87,7 +88,7 @@ const About = () => {
                                 English C2
                             </div>
                         </div>
-                        <a href="./Przemyslaw_Leksa_resume.pdf" download className="download-button">
+                        <a href={cv} download className="download-button">
                         <button>
                             
                             Download CV

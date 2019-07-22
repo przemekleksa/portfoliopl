@@ -3,7 +3,7 @@
 @mixin tablet {
     @media screen and (max-width: $page-width) { 
         .abilities-details {
-            padding: 100px 20px;
+            padding: 50px 20px;
             flex-direction: column;
             .details {
                 width: 100%;
@@ -16,7 +16,7 @@
         }
     }
     @media screen and (max-width: $fourth-break-point) {
-        padding: 20px 10px;
+        padding: 0 10px;
         .abilities-details {
             padding: 25px 0;
             .stats {
@@ -35,7 +35,7 @@
         max-width: $page-width;
         display: flex;
         margin: 0 auto;
-        padding: 100px 0;
+        padding: 50px 0;
         .details {
             width: 50%;
             margin-right: 50px;
