@@ -69,7 +69,7 @@ const Portfolio = () => {
                                 </ul>
                             </div>
                             <div className="buttons">
-                            <a href="#home"><button>Live</button></a>
+                            <a href="http://przemyslawleksa.epizy.com/"><button>Live</button></a>
                             <a href="https://github.com/przemekleksa/The_Sass"><button>Github</button></a>
                             </div>
                         </div>
