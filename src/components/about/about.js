@@ -71,7 +71,7 @@ const About = () => {
                                 Phone:
                             </div>
                             <div>
-                                +48 614 230 518
+                                +48 514 230 618
                             </div>
                         </div>
                         <div className="row">
