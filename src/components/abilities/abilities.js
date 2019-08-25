@@ -20,7 +20,7 @@ const Abilities = () => {
                 <div className="stats">
                     <div className="technology">
                         <div className="experiance">
-                            <span>HTML/CSS</span> - years of experiance <span>90%</span>
+                            <span>HTML/CSS</span> - years of experience <span>90%</span>
                         </div>
                         <div className="experiance-bar">
                             <div className="level">
@@ -29,7 +29,7 @@ const Abilities = () => {
                             </div>
                         </div>
                         <div className="experiance">
-                            <span>Scss</span> - year of experiance <span>60%</span>
+                            <span>Scss</span> - year of experience <span>60%</span>
                         </div>
                         <div className="experiance-bar">
                             <div className="level" id="second-level">
@@ -38,7 +38,7 @@ const Abilities = () => {
                             </div>
                         </div>
                         <div className="experiance">
-                            <span>Bootstrap</span> - year of experiance <span>70%</span>
+                            <span>Bootstrap</span> - year of experience <span>70%</span>
                         </div>
                         <div className="experiance-bar">
                             <div className="level" id="third-level">
@@ -47,7 +47,7 @@ const Abilities = () => {
                             </div>
                         </div>
                         <div className="experiance">
-                            <span>JavaScript</span> - half year of experiance <span>50%</span>
+                            <span>JavaScript</span> - half year of experience <span>50%</span>
                         </div>
                         <div className="experiance-bar">
                             <div className="level" id="fourth-level">
@@ -56,7 +56,7 @@ const Abilities = () => {
                             </div>
                         </div>
                         <div className="experiance">
-                            <span>React</span> - half year of experiance <span>30%</span>
+                            <span>React</span> - half year of experience <span>30%</span>
                         </div>
                         <div className="experiance-bar">
                             <div className="level" id="fifth-level">
@@ -65,7 +65,7 @@ const Abilities = () => {
                             </div>
                         </div>
                         <div className="experiance">
-                            <span>Python</span> - half year of experiance <span>30%</span>
+                            <span>Python</span> - half year of experience <span>30%</span>
                         </div>
                         <div className="experiance-bar">
                             <div className="level" id="sixth-level">
