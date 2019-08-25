@@ -8,7 +8,7 @@ const Abilities = () => {
                 <div className="details">
                     <h3>My Skills</h3>
                     <p>
-                    I have a lot of experiance using technologies like: <span>HTML, CSS, Scss, Bootstrap, JavaScript</span>. <br />
+                    I have a lot of experience using technologies like: <span>HTML, CSS, Scss, Bootstrap, JavaScript</span>. <br />
                     I finished IT studies with great scores and lately I decided to expand my knowledge so I joined <span>Fullstack Developer Bootcamp</span>. I've learned a lot of new amazing technologies there, but also expanded my knowledge in technologies that I used before. Some of those new technologies are: <span>React, Redux, Python, Django, SQL</span>.<br />
                     In the past I've been using: PHP, Wordpress, Prestashop.<br /><br />
                     I can create fully RWD pages.
