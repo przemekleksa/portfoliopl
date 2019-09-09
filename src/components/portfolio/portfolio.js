@@ -89,8 +89,8 @@ const Portfolio = () => {
                                 </ul>
                             </div>
                             <div className="buttons">
-                            <a href="#home"><button>Live</button></a>
-                            <a href="#home"><button>Github</button></a>
+                            <a href="http://przemyslawleksa.epizy.com/pizza"><button>Live</button></a>
+                            <a href="https://github.com/przemekleksa/Ristorante"><button>Github</button></a>
                             </div>
                         </div>
                     </div>
